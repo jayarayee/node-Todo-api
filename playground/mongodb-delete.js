@@ -23,5 +23,6 @@ MongoClint.connect('mongodb://localhost:27017/TodoApp', (err, clint)=>{
     db.collection('Todos').findOneAndDelete({completed: false}).then((result) =>{
         console.log(result);
     });
+    
     // clint.close();
 });
